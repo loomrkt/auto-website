@@ -60,7 +60,7 @@ body {
     justify-content: center;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
-    transition: 1s top ease-out;
+    transition: 0.5s top ease-out;
   }
   .listeAnch {
     display: block;
