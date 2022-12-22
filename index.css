@@ -9,6 +9,7 @@ body {
   height: 100%;
   position: relative;
 }
+/*debut bar de navigation */
 .navbar {
   width: 100%;
   display: flex;
@@ -83,5 +84,56 @@ body {
   }
   .button2 {
     right: 2rem;
+  }
+}
+/*fin bar de navigation */
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 0;
+}
+.gauche,
+.droit {
+  width: 40%;
+}
+.gauche {
+  margin-left: 3rem;
+}
+.gauche h1 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #3a72a6;
+  position: relative;
+}
+.gauche h1::after {
+  content: "";
+  position: absolute;
+  bottom: -1.25rem;
+  left: 0;
+  width: 80px;
+  height: 2px;
+  background-color: #ff2525;
+}
+.droit {
+  margin-right: 4rem;
+}
+.droit img {
+  width: 100%;
+}
+@media screen and (max-width: 540px) {
+  .section1 {
+    flex-direction: column;
+  }
+  .gauche,
+  .droit {
+    width: 80%;
+  }
+  .gauche {
+    margin-left: 0rem;
+  }
+  .droit {
+    margin-right: 0rem;
+    margin-top: 5rem;
   }
 }

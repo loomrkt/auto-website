@@ -5,10 +5,12 @@ var isOpen = false;
 
 toogleBtn.addEventListener("click", () => {
   if (!isOpen) {
+    document.documentElement.style.overflow = "hidden";
     toogleBtnImg.style.filter = "invert(1)";
     collapse.style.top = "0vh";
     isOpen = true;
   } else {
+    document.documentElement.style.overflow = "auto";
     toogleBtnImg.style.filter = "invert(0)";
     collapse.style.top = "-100vh";
     isOpen = false;
